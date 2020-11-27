@@ -1,9 +1,3 @@
-# Plugin manager and plugins setup
-source ~/.zsh/zplug/init.zsh
-
-zplug "marlonrichert/zsh-autocomplete"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
 #Tools
 eval "$(starship init zsh)"
 eval "$(thefuck --alias)"
@@ -29,6 +23,7 @@ alias v="nvim"
 alias cat="bat"
 alias ls="lsd"
 alias ll="lsd -Al"
+alias lt="lsd --tree"
 alias b='buku --suggest'
 
 # Exports
