@@ -30,4 +30,4 @@ alias b='buku --suggest'
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/emacs
 export ZPLUG_HOME=~/.zsh/zplug
-
+export BAT=/sys/class/power_supply/BAT0/capacity
