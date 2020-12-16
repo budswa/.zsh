@@ -19,6 +19,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Aliases
+alias y="yay"
 alias v="nvim"
 alias cat="bat"
 alias ls="lsd"
@@ -30,4 +31,5 @@ alias b='buku --suggest'
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/emacs
 export ZPLUG_HOME=~/.zsh/zplug
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export BAT=/sys/class/power_supply/BAT0/capacity
