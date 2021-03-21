@@ -1,35 +1,35 @@
-#Tools
+# Prompt
 eval "$(starship init zsh)"
-eval "$(thefuck --alias)"
-eval "$(zoxide init zsh)"
 
-# Lines configured by zsh-newuser-install
-zstyle :compinstall filename '/home/m2/.zshrc'
-autoload -Uz compinit
-compinit
 
 # Options
 setopt autocd
 
 bindkey -v # Vim mode
-bindkey -e # Emacs mode 
 
 HISTFILE=~/.zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
 # Aliases
-alias y="yay"
+alias please="doas"
+alias yay="paru"
 alias v="nvim"
-alias cat="bat"
 alias ls="lsd"
 alias ll="lsd -Al"
 alias lt="lsd --tree"
-alias b='buku --suggest'
 
-# Exports
+# Exported variables
 export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/emacs
+export VISUAL=/usr/bin/code
 export ZPLUG_HOME=~/.zsh/zplug
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
-export BAT=/sys/class/power_supply/BAT0/capacity
+export BATT=/sys/class/power_supply/BAT0/capacity
+export TERM="xterm-256color"
+
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+
+zstyle :compinstall filename '/home/m2/.zshrc'
+autoload -Uz compinit
+compinit
